@@ -1,6 +1,7 @@
 import React from "react";
 
-import Navbar from "./components" ;
+import Navbar from "./components/navbar/Navbar" ;
+import "./App.css"
 
 export default function App() {
 
@@ -9,8 +10,8 @@ export default function App() {
 
     <div className ="App">
      <div className="gradient_bg">
-      <h1>Don't forget that I am here for you. I love you. </h1>
-       // Navbar here
+      
+      <Navbar />
 
       </div> 
     </div>
