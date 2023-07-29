@@ -3,24 +3,23 @@ import { RiMenu3Line, RiCloseLine } from 'react-icons/ri';
 import logo from '../../assets/logo.svg'; //This line imports logo.svg from src/assets/logo.svg 
 import './navbar.css'; //this line imports navbar.css file from src/components/navbar/navbar.css
 
-//I want to create a beutiful navbar
 export default function Navbar(){
 
-    const [toggleMenu, setToggleMenu] = useState(false);
+    {/*const [toggleMenu, setToggleMenu] = useState(false); */}
+
+
     return(
-        <div className="gpt3__navbar">
 
 
-
-
+  <div className="gpt3__navbar"> 
 
       <div className="gpt3__navbar-links">
 
-        <div className="gpt3__navbar-links_logo">
-          <img src={logo} />
-        </div>
+       <div className="gpt3__navbar-links_logo">
+         <img src={logo} />
+       </div>
 
-        <div className="gpt3__navbar-links_container">
+       <div className="gpt3__navbar-links_container">
           <p><a href="#home">Home</a></p>
           <p><a href="#wgpt3">What is GPT3?</a></p>
           <p><a href="#possibility">Open AI</a></p>
@@ -30,9 +29,6 @@ export default function Navbar(){
 
       </div>
 
-
-
-
       <div className="gpt3__navbar-sign">
         <p>Sign in</p>
         <button type="button">Sign up</button>
@@ -40,8 +36,8 @@ export default function Navbar(){
 
 
 
-
-      <div className="gpt3__navbar-menu">
+{/* this is the menu for smaller screens */}
+      {/* <div className="gpt3__navbar-menu">
 
         {toggleMenu
           ? <RiCloseLine color="#fff" size={27} onClick={() => setToggleMenu(false)} />
@@ -64,13 +60,11 @@ export default function Navbar(){
             <button type="button">Sign up</button>
           </div>
 
-        </div>
+        </div>)}
+      </div> */}
 
 
 
-
-        )}
-      </div>
     </div>
   );
     
