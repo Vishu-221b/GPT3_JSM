@@ -3,6 +3,7 @@ import React from "react";
 import Brand from "./components/brand/Brand";
 import Navbar from "./components/navbar/Navbar";
 import Header from "./containers/header/Header";
+import WhatGPT3 from "./containers/whatGPT3/WhatGPT3";
 import "./App.css";
 
 export default function App() {
@@ -18,6 +19,7 @@ export default function App() {
       </div> 
 
       <Brand />
+      <WhatGPT3 />
 
     </div>
   );
